@@ -1,4 +1,4 @@
-name: 'Automatic build'
+name: "Automatic build"
 on:
   push:
     branches:
@@ -10,7 +10,6 @@ on:
 
 jobs:
   continuous-delivery:
-
     runs-on: ubuntu-latest
 
     env:
@@ -20,7 +19,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0  # for posts's lastmod
+          fetch-depth: 0 # for posts's lastmod
 
       - name: Setup Ruby
         uses: actions/setup-ruby@v1
@@ -39,7 +38,7 @@ jobs:
         run: |
           bundle config path ${{ env.GEMS_PATH }}
           bundle install --jobs 4 --retry 3
-
+      #
       - name: Check baseurl
         run: |
           baseurl="$(grep '^baseurl:' _config.yml | sed "s/.*: *//;s/['\"]//g;s/#.*//")"
