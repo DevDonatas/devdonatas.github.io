@@ -15,7 +15,7 @@ timezone: Asia/Shanghai
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # --------------------------
-title: DataDonatas # the main title
+title: DevDonatas # the main title
 
 tagline: Updates on the things I am working on # it will display as the sub-title
 
