@@ -1,2 +1,2 @@
 Blog:
-https://datadonatas.github.io
+https://devdonatas.github.io
