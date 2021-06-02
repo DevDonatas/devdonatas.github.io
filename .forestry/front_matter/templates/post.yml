@@ -22,4 +22,4 @@ fields:
       format: markdown
   label: Post
 pages:
-- _posts/test.md
+- _posts/2021-06-02-test.md
